@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjal Pramanik - Talent Acquisition Leader | Strategic HR Professional</title>
+    <meta name="description" content="Results-driven Talent Acquisition Leader with 13+ years experience in strategic hiring, team leadership, and recruitment transformation across FMCG, Manufacturing, Insurance, and Healthcare.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s linear infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100px); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero .description {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .metric-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .metric-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .metric-label {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+        
+        .section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2c3e50;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .competency-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .competency-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .competency-title {
+            font-size: 1.4em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .competency-list {
+            list-style: none;
+        }
+        
+        .competency-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .competency-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .experience-timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+        }
+        
+        .experience-item {
+            margin-bottom: 50px;
+            position: relative;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-left: 30px;
+        }
+        
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -45px;
+            top: 30px;
+            width: 12px;
+            height: 12px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #667eea;
+        }
+        
+        .experience-header {
+            margin-bottom: 20px;
+        }
+        
+        .company-name {
+            font-size: 1.3em;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .job-title {
+            font-size: 1.1em;
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        .duration {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .achievements {
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        .achievements li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .achievements li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+        
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .case-study {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .case-study:hover {
+            transform: translateY(-10px);
+        }
+        
+        .case-study-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .case-study-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .case-study-metric {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        .case-study-content {
+            padding: 30px;
+        }
+        
+        .case-study-section {
+            margin-bottom: 20px;
+        }
+        
+        .case-study-section h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-item {
+            padding: 20px;
+        }
+        
+        .contact-icon {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 10px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .tech-item {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+        }
+        
+        .tech-item:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2em;
+            }
+            
+            .section-title {
+                font-size: 2em;
+            }
+            
+            .experience-timeline {
+                padding-left: 0;
+            }
+            
+            .experience-item {
+                margin-left: 0;
+            }
+            
+            .experience-item::before {
+                display: none;
+            }
+            
+            .experience-timeline::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>UJJAL PRAMANIK</h1>
+                <div class="subtitle">Strategic Talent Acquisition Leader</div>
+                <div class="description">
+                    Results-driven Talent Acquisition Leader with over 13 years of experience in strategic hiring across FMCG, Manufacturing, Insurance, and Healthcare. Proven expertise in end-to-end recruitment operations, focusing on efficiency, scalability, and quality of hire.
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-number">99%</span>
+                        <span class="metric-label">Closure Rate</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-number">93%</span>
+                        <span class="metric-label">Cost Reduction</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-number">400+</span>
+                        <span class="metric-label">Employee Migration</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-number">40%</span>
+                        <span class="metric-label">Pipeline Quality Increase</span>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 40px;">
+                    <a href="#contact" class="btn">Get In Touch</a>
+                    <a href="#experience" class="btn">View Experience</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Core Competencies & Expertise</h2>
+            <div class="competencies-grid">
+                <div class="competency-card">
+                    <h3 class="competency-title">Talent Acquisition & Strategic Hiring</h3>
+                    <ul class="competency-list">
+                        <li>Technical & Product Hiring</li>
+                        <li>Niche Skill and Campus Recruitment</li>
+                        <li>Candidate Sourcing & Engagement</li>
+                        <li>Diversity & Inclusion Initiatives</li>
+                        <li>Employer Branding & Social Hiring</li>
+                        <li>Market Mapping & Talent Intelligence</li>
+                    </ul>
+                </div>
+                
+                <div class="competency-card">
+                    <h3 class="competency-title">Workforce Planning & Operations</h3>
+                    <ul class="competency-list">
+                        <li>Workforce Planning & Forecasting</li>
+                        <li>Manpower Planning & Budgeting</li>
+                        <li>Change Management</li>
+                        <li>Project Management</li>
+                        <li>Recruitment Analytics & Reporting</li>
+                        <li>Process Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="competency-card">
+                    <h3 class="competency-title">Leadership & Team Management</h3>
+                    <ul class="competency-list">
+                        <li>Team Management & Development</li>
+                        <li>Stakeholder & Vendor Management</li>
+                        <li>Cross-functional Collaboration</li>
+                        <li>SLA & Delivery Governance</li>
+                        <li>Performance Coaching</li>
+                        <li>Strategic Business Partnership</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tech-stack">
+                <div class="tech-item">Taleo</div>
+                <div class="tech-item">Avature</div>
+                <div class="tech-item">SuccessFactors</div>
+                <div class="tech-item">Workday</div>
+                <div class="tech-item">Greenhouse</div>
+                <div class="tech-item">Oracle</div>
+                <div class="tech-item">Skillate</div>
+                <div class="tech-item">Analytics & Dashboards</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Success Stories & Impact</h2>
+            <div class="case-studies-grid">
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-title">Large-Scale Migration Project</div>
+                        <div class="case-study-metric">400+ Employees</div>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-study-section">
+                            <h4>Challenge:</h4>
+                            <p>Execute complex employee migration across multiple verticals within tight timeline constraints while ensuring business continuity.</p>
+                        </div>
+                        <div class="case-study-section">
+                            <h4>Solution:</h4>
+                            <p>Designed comprehensive migration strategy with standardized processes, stakeholder alignment, and quality controls.</p>
+                        </div>
+                        <div class="case-study-section">
+                            <h4>Result:</h4>
+                            <p>Successfully completed migration of 400+ employees within 3-month deadline, receiving organizational commendation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-title">Cost Optimization Initiative</div>
+                        <div class="case-study-metric">93% Cost Reduction</div>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-study-section">
+                            <h4>Challenge:</h4>
+                            <p>Reduce dependency on expensive executive search firms while maintaining quality of senior-level hires.</p>
+                        </div>
+                        <div class="case-study-section">
+                            <h4>Solution:</h4>
+                            <p>Built internal executive search capabilities, developed advanced sourcing strategies, and created robust talent pipelines.</p>
+                        </div>
+                        <div class="case-study-section">
+                            <h4>Result:</h4>
+                            <p>Achieved 99% closure rate on in-house recruitment with 93% reduction in executive search costs.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div class="case-study-title">Social Media Recruitment Innovation</div>
+                        <div class="case-study-metric">40% Quality Increase</div>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-study-section">
+                            <h4>Challenge:</h4>
+                            <p>Enhance candidate pipeline quality and expand reach to passive talent across diverse industries.</p>
+                        </div>
+                        <div class="case-study-section">
+                            <h4>Solution:</h4>
+                            <p>Pioneered innovative social media recruitment strategies, built online talent communities, and created engaging content.</p>
+                        </div>
+                        <div class="case-study-section">
+                            <h4>Result:</h4>
+                            <p>Achieved 40% increase in candidate pipeline quality with expanded reach to passive talent markets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="company-name">Aster DM Healthcare, Bangalore</div>
+                        <div class="job-title">Deputy Manager - Talent Acquisition</div>
+                        <div class="duration">2023 - Present</div>
+                    </div>
+                    <p>Leading comprehensive Talent Acquisition across IT, Non-IT, and Leadership Functions for Aster Clinics (UAE & ADH)</p>
+                    <ul class="achievements">
+                        <li>Managing team of 7-8 recruiters with structured coaching programs</li>
+                        <li>Directed niche technical hiring for manufacturing tech and industrial IoT</li>
+                        <li>Implemented D&I initiatives and talent mobility programs</li>
+                        <li>Redesigned recruitment workflows improving TTF metrics</li>
+                        <li>Led compensation benchmarking and workforce forecasting</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="company-name">CareerNet Technologies (KOCH Industries)</div>
+                        <div class="job-title">Manager - Talent Acquisition</div>
+                        <div class="duration">2022 - 2023</div>
+                    </div>
+                    <p>Directed niche hiring for technical and engineering roles across manufacturing tech domains</p>
+                    <ul class="achievements">
+                        <li>Led high-performing team of 30 recruiters</li>
+                        <li>Implemented structured coaching frameworks</li>
+                        <li>Streamlined recruitment workflows and quality controls</li>
+                        <li>Drove collaborative solutions for complex hiring challenges</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="company-name">Anheuser-Busch InBev, Bangalore</div>
+                        <div class="job-title">Assistant Manager - Talent Acquisition</div>
+                        <div class="duration">2019 - 2022</div>
+                    </div>
+                    <p>Managed end-to-end recruitment for Sales, Marketing, and IT roles across multiple geographies</p>
+                    <ul class="achievements">
+                        <li>Built strong stakeholder relationships</li>
+                        <li>Developed social media recruitment strategies</li>
+                        <li>Managed cost-effective hiring and offer negotiations</li>
+                        <li>Handled recruitment across corporate and plant locations</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="company-name">In2IT Technology Pvt Ltd</div>
+                        <div class="job-title">Recruitment Manager</div>
+                        <div class="duration">2017 - 2019</div>
+                    </div>
+                    <p>Directed executive hiring across India, Singapore, and South Africa markets</p>
+                    <ul class="achievements">
+                        <li>Closed Director to EVP-level roles successfully</li>
+                        <li>Built robust executive talent pipelines</li>
+                        <li>Delivered data-driven insights for leadership hiring</li>
+                        <li>Managed international recruitment operations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Achievements Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Key Achievements & Impact</h2>
+            <div class="competencies-grid">
+                <div class="competency-card">
+                    <h3 class="competency-title">Team Leadership Excellence</h3>
+                    <ul class="competency-list">
+                        <li>Managed teams ranging from 4 to 30 professionals across multiple geographies</li>
+                        <li>Achieved 99% closure rate on in-house recruitment</li>
+                        <li>Built high-performing recruitment teams with structured development</li>
+                    </ul>
+                </div>
+                
+                <div class="competency-card">
+                    <h3 class="competency-title">Cost & Process Optimization</h3>
+                    <ul class="competency-list">
+                        <li>Reduced Executive Search costs by 93%</li>
+                        <li>Delivered 400+ employee migration within 3-month timeline</li>
+                        <li>Created organization-wide process standardization</li>
+                    </ul>
+                </div>
+                
+                <div class="competency-card">
+                    <h3 class="competency-title">Innovation & Strategic Impact</h3>
+                    <ul class="competency-list">
+                        <li>Pioneered social media strategies increasing pipeline quality by 40%</li>
+                        <li>Implemented data-driven recruitment analytics</li>
+                        <li>Led diversity initiatives expanding representation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Let's Connect</h2>
+            <p style="font-size: 1.2em; max-width: 600px; margin: 0 auto;">
+                Ready to transform your talent acquisition strategy? Let's discuss how my expertise can drive your recruitment success.
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:ujjalpramanik90@gmail.com" style="color: white; text-decoration: none;">ujjalpramanik90@gmail.com</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/ujjalpramanik/" target="_blank" style="color: white; text-decoration: none;">linkedin.com/in/ujjalpramanik</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+919000689240" style="color: white; text-decoration: none;">+91-9000689240</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Bangalore, India</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <a href="mailto:ujjalpramanik90@gmail.com" class="btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/ujjalpramanik/" target="_blank" class="btn">Connect on LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and timeline items
+        document.querySelectorAll('.competency-card, .case-study, .experience-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
